@@ -1,10 +1,12 @@
-import Head from 'next/head'
-import { Inter } from '@next/font/google'
+import Head from "next/head";
+import { Inter } from "@next/font/google";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 import NavBar from "@/components/layout/nav/NavBar";
-import { Hero } from "@/components/modules"
+import { Hero, About, Techs } from "@/components/modules";
+
+import { FullPage, Slide } from "react-full-page";
 
 export default function Home() {
   return (
@@ -16,14 +18,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar/>
+      <NavBar />
 
-      <main className="snap-y snap-proximity">
-        <Hero/>
-        <Hero/>
-        <Hero/>
-        <Hero/>
-      </main>
+      <FullPage>
+
+        <Slide>
+          <Hero />
+        </Slide>
+        <Slide>
+          <About />
+        </Slide>
+        <Slide>
+          <Techs />
+        </Slide>
+
+      </FullPage>
     </>
-  )
+  );
 }
