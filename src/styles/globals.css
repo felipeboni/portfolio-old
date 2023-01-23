@@ -7,71 +7,21 @@
     @apply mx-auto;
 }
 
-header {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 1000;
-    max-height: 12rem;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: transparent;
-    -webkit-box-pack: space-between;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
-    font-size: 1rem;
-    height: 11.12em;
-    position: absolute;
-    padding-left: 3em;
-    padding-right: 3em;
+section#hero {
+    background: linear-gradient(90deg, #721CE3 67%, #FFC83E 33%);
 }
 
-.logo {
-    display: flex;
-    width: 8.34em;
-    height: 3.195em;
-    position: relative;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transition: color 700ms;
-    transition: color 700ms;
-    outline-color: transparent;
-    color: #ccf381;
+header button.active {
+    @apply w-10;
+}
+header button.active::before {
+    transform: rotate(45deg);
+    width: 50px;
+    top: 25px;
 }
 
-button {
-    z-index: 999;
-    width: 2.78em;
-    height: 2.09em;
-    background: none;
-    position: relative;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-flexbox;
-    display: inline-flex;
-    margin-top: 0.699em;
-    color: #4831d4;
-}
-
-section {
-    background: linear-gradient(90deg, #4831d4 67%, #ccf381 33%);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+header button.active::after {
+    transform: rotate(-45deg);
+    width: 50px;
+    bottom: 12.5px;
 }

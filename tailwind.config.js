@@ -12,11 +12,12 @@ module.exports = {
         },
         secondary: '#FFC83E',
         offwhite: '#F9F6FE'
-      },
-      fontFamily: {
-        'head': ['Le Murmure', 'sans-serif']
-      },
+      }
     },
+    fontFamily: {
+      'display': ['"Le Murmure"', 'sans-serif'],
+      'sans': ['Inter', 'sans-serif'],
+    }
   },
   plugins: [],
 }
