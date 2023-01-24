@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import NavBar from "@/components/layout/nav/NavBar";
 import { CustomControls } from "@/components/layout/nav/SlideControl";
-import { Hero, About, Techs } from "@/components/modules";
+import { Hero, About, Techs, Places } from "@/components/modules";
 
 import { FullPage, Slide } from "react-full-page";
 
@@ -31,6 +31,9 @@ export default function Home() {
         </Slide>
         <Slide>
           <Techs />
+        </Slide>
+        <Slide>
+          <Places />
         </Slide>
 
       </FullPage>
