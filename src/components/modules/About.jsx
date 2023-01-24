@@ -12,10 +12,10 @@ export const About = () => {
           <div className="flex flex-col">
             <h1 className="leading-none text-[164px] text-primary-500 font-display">Design</h1>
             <p className="max-w-xl my-7 text-primary-900">
-              I'm probably not the typical designer positioned behind an
+              I&apos;m probably not the typical designer positioned behind an
               Illustrator artboard adjusting pixels, but I design. Immersed in
               stylesheets tweaking font sizes and contemplating layouts is where
-              you'll find me (~_^). I'm committed to creating fluent user
+              you&apos;ll find me (~_^). I&apos;m committed to creating fluent user
               experiences while staying fashionable.
             </p>
             <svg
@@ -60,7 +60,7 @@ export const About = () => {
           <div className="flex flex-col">
             <h1 className="leading-none text-[164px] text-primary-500 font-display">Engineering</h1>
             <p className="max-w-2xl my-7 text-primary-900">
-            In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.
+            In building JavaScript applications, I&apos;m equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.
             </p>
           </div>
           <svg

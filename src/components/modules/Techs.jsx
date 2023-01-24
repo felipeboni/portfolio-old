@@ -14,7 +14,7 @@ export const Techs = () => {
               past 5 years...
             </h1>
             <p className="max-w-xl mt-16 mb-5 text-white">
-              I've built products for companies and businesses around the globe
+              I&apos;ve built products for companies and businesses around the globe
               ranging from marketing websites to complex solutions and
               enterprise apps with focus on fast, elegant and accessible user
               experiences.
@@ -29,7 +29,7 @@ export const Techs = () => {
               Before now, I was Principal Frontend
               Engineer at hellotax, where I worked on a suite of tools and
               services tailored at providing fast, automated VAT Registration /
-              filings & Returns solutions for multi-channel sellers across
+              filings &amp; Returns solutions for multi-channel sellers across
               Europe.
             </p>
           </div>
