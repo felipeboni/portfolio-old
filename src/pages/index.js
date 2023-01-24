@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 import NavBar from "@/components/layout/nav/NavBar";
+import { CustomControls } from "@/components/layout/nav/SlideControl";
 import { Hero, About, Techs } from "@/components/modules";
 
 import { FullPage, Slide } from "react-full-page";
@@ -20,7 +21,7 @@ export default function Home() {
 
       <NavBar />
 
-      <FullPage>
+      <FullPage controls={CustomControls} controlsProps={{className: "fixed z-[999] bottom-10 right-10 flex flex-col gap-1"}}>
 
         <Slide>
           <Hero />
