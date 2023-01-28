@@ -19,10 +19,22 @@ export const Places = () => {
         <article className="w-5/12 h-full">
           <div className="flex flex-col h-full p-16">
             <div className="h-full p-16 bg-neutral-50">
-              <h1 className="text-xl font-semibold">4x4Brasil</h1>
-              <h2 className="text-neutral-400">Front End Dev. &amp; UI/UX</h2>
+              <div className="flex gap-5">
+                {/* <img src="https://www.4x4brasil.com.br/forum/images/2013/logo-4x4brasil.png" alt="" /> */}
 
-              <span className="block mt-1 text-sm text-neutral-400">2021 January - Present</span>
+                <div className="block w-16 h-inherit bg-contain bg-no-repeat bg-center bg-[url('https://www.4x4brasil.com.br/forum/images/2013/logo-4x4brasil.png')]"></div>
+
+                <div>
+                  <h1 className="text-xl font-semibold leading-none">4x4Brasil</h1>
+                  <h2 className="my-2 leading-none text-neutral-400">
+                    Front End Dev. &amp; UI/UX Designer
+                  </h2>
+
+                  <span className="block text-sm leading-none text-neutral-400">
+                    2021 January - Present
+                  </span>
+                </div>
+              </div>
 
               <div className="mt-5">
                 <h3 className="flex items-center gap-2 text-neutral-600 before:w-2 before:h-2 before:bg-primary-500 before:block">
@@ -52,11 +64,13 @@ export const Places = () => {
                   </li>
                   <li className="mt-1 text-sm text-neutral-400">
                     <span className="mr-1 text-neutral-300">5.</span>
-                    Designing wireframes, mockups, and prototypes to effectively communicate design concepts and gather feedback.
+                    Designing wireframes, mockups, and prototypes to effectively
+                    communicate design concepts and gather feedback.
                   </li>
                   <li className="mt-1 text-sm text-neutral-400">
                     <span className="mr-1 text-neutral-300">6.</span>
-                    Creating and maintaining design guidelines and style guides to ensure consistency in the design process.
+                    Creating and maintaining design guidelines and style guides
+                    to ensure consistency in the design process.
                   </li>
                 </ul>
               </div>

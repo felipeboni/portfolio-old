@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,6 +11,11 @@ import { Hero, About, Techs, Places } from "@/components/modules";
 import { FullPage, Slide } from "react-full-page";
 
 export default function Home() {
+  const slidesToInvert = [2];
+  const initialSlide = 0;
+
+  const [activeSlider, setActiveSlider] = useState(initialSlide);
+
   return (
     <>
       <Head>
@@ -19,10 +25,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar />
+      <NavBar sliderProps={{ slidesToInvert, activeSlider }} />
 
-      <FullPage controls={CustomControls} controlsProps={{className: "fixed z-[999] bottom-10 right-10 flex flex-col gap-1"}}>
-
+      <FullPage
+        controls={CustomControls}
+        controlsProps={{
+          className: "fixed z-[999] bottom-10 right-10 flex flex-col gap-1",
+          slidesToInvert,
+        }}
+        beforeChange={({ to }) => setActiveSlider(to)}
+        initialSlide={initialSlide}
+      >
         <Slide>
           <Hero />
         </Slide>
@@ -35,7 +48,6 @@ export default function Home() {
         <Slide>
           <Places />
         </Slide>
-
       </FullPage>
     </>
   );
