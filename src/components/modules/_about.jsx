@@ -7,16 +7,19 @@ export const About = () => {
       className="relative flex flex-col items-center justify-center w-full h-screen gap-16"
     >
       <div className="w-full max-w-screen-2xl">
-
         <article className="relative -mb-16">
           <div className="flex flex-col">
-            <h1 className="leading-none text-[164px] text-primary-500 font-display">Design</h1>
+            <h1 className="leading-none text-[164px] text-primary-500 font-display">
+              Design
+            </h1>
             <p className="max-w-xl my-7 text-primary-900">
-              I&apos;m probably not the typical designer positioned behind an
-              Illustrator artboard adjusting pixels, but I design. Immersed in
-              stylesheets tweaking font sizes and contemplating layouts is where
-              you&apos;ll find me (~_^). I&apos;m committed to creating fluent user
-              experiences while staying fashionable.
+              As a UI/UX designer, my main responsibilities is creating
+              user-centered design solutions for web and mobile applications. I
+              conduct user research and usability testing to gather insights,
+              and create wireframes, prototypes, and design mockups, ensuring
+              the consistency of design elements and visual standards throughout
+              the product, always staying up to date with industry trends and
+              best practices in UI/UX design.
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +61,15 @@ export const About = () => {
 
         <article className="relative flex justify-end">
           <div className="flex flex-col">
-            <h1 className="leading-none text-[164px] text-primary-500 font-display">Engineering</h1>
+            <h1 className="leading-none text-[164px] text-primary-500 font-display">
+              Engineering
+            </h1>
             <p className="max-w-2xl my-7 text-primary-900">
-            In building JavaScript applications, I&apos;m equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.
+              In building JavaScript and PHP applications, I&apos;m equipped
+              with just the right tools, and can absolutely function
+              independently of them to deliver fast, resilient solutions
+              optimized for scale — performance and scalabilty are priorities on
+              my radar.
             </p>
           </div>
           <svg
@@ -82,7 +91,6 @@ export const About = () => {
           </svg>
         </article>
       </div>
-
     </section>
   );
 };

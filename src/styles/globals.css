@@ -11,6 +11,10 @@ section#hero {
     background: linear-gradient(90deg, #721CE3 67%, #FFC83E 33%);
 }
 
+section#featured {
+    background: linear-gradient(90deg, #721CE3 41.6%, #FFC83E 41.6%);
+}
+
 header button.active {
     @apply w-10;
 }

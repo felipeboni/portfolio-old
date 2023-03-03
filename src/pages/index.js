@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import NavBar from "@/components/layout/nav/NavBar";
 import { CustomControls } from "@/components/layout/nav/SlideControl";
-import { Hero, About, Techs, Places } from "@/components/modules";
+import { Hero, About, Techs, Places, Featured } from "@/components/modules";
 
 import { FullPage, Slide } from "react-full-page";
 
@@ -30,7 +30,7 @@ export default function Home() {
       <FullPage
         controls={CustomControls}
         controlsProps={{
-          className: "fixed z-[999] bottom-10 right-10 flex flex-col gap-1",
+          className: "fixed z-[999] bottom-24 right-24 flex flex-col gap-1",
           slidesToInvert,
         }}
         beforeChange={({ to }) => setActiveSlider(to)}
@@ -47,6 +47,9 @@ export default function Home() {
         </Slide>
         <Slide>
           <Places />
+        </Slide>
+        <Slide>
+          <Featured />
         </Slide>
       </FullPage>
     </>
