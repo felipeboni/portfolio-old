@@ -11,13 +11,7 @@ const NavBar = ({ sliderProps }) => {
   const { slidesToInvert, activeSlider } = sliderProps;
 
   return (
-    <header className="w-full flex z-50 max-h-[12rem] items-center bg-transparent justify-between h-[11.12em] fixed px-24">
-      <Link
-        href="/"
-        className="flex w-[8.34em] h-[3.195em] relative flex-col transition-colors text-secondary font-display text-4xl justify-center"
-      >
-        boni
-      </Link>
+    <header className="w-full flex z-50 max-h-[12rem] items-center bg-transparent justify-end h-[11.12em] fixed px-24">
       {slidesToInvert.includes(activeSlider) ? (
         <button
           onClick={() => setOpenNav(!openNav)}

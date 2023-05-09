@@ -4,9 +4,9 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex flex-col items-center justify-center w-full h-screen gap-16 pb-16"
+      className="relative flex flex-col items-center justify-center w-full h-screen gap-16 p-16"
     >
-      <div className="flex items-center justify-between w-full pt-48 max-w-screen-2xl">
+      <div className="flex items-center justify-between w-full max-w-screen-2xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="410"

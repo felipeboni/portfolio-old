@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="relative flex flex-col items-center justify-center w-full h-screen gap-16"
+      className="relative flex flex-col items-center justify-center w-full h-screen gap-16 p-16"
     >
       <div className="w-full max-w-screen-2xl">
         <article className="relative -mb-16">

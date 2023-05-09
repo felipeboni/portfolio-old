@@ -4,7 +4,7 @@ export const Featured = () => {
   return (
     <section
       id="featured"
-      className="relative flex flex-col items-center justify-center w-full h-screen gap-16 pb-16"
+      className="relative flex flex-col items-center justify-center w-full h-screen gap-16 p-16"
     >
       <div className="flex w-full max-w-screen-2xl">
         <article className="w-5/12 pr-48">

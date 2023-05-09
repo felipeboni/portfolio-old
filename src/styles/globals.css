@@ -18,6 +18,7 @@ section#featured {
 header button.active {
     @apply w-10;
 }
+
 header button.active::before {
     transform: rotate(45deg);
     width: 50px;
@@ -28,4 +29,25 @@ header button.active::after {
     transform: rotate(-45deg);
     width: 50px;
     bottom: 12.5px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #fff transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+    background: transparent;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 14px;
 }
