@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export const Hero = () => {
@@ -29,10 +30,21 @@ export const Hero = () => {
             <br />
             Developer<span className="text-white">.</span>
           </h1>
-          <p className="max-w-2xl mt-12 text-2xl leading-9 text-white xl:max-w-3xl">
+          <p className="max-w-2xl mt-12 mb-3 text-2xl leading-9 text-white xl:max-w-3xl">
             I like to craft solid and scalable frontend products with great user
             experiences.
           </p>
+
+          <div className="flex items-center justify-start gap-8 py-5 text-white brightness-[0] invert">
+            <span>Tech stack:</span>
+
+            <Image src="/ts.png" alt="" width={30} height={30} />
+            <Image src="/react.png" alt="" width={30} height={30} />
+            <Image src="/next.png" alt="" width={40} height={40} />
+            <Image src="/laravel.png" alt="" width={30} height={30} />
+            <Image src="/figma.png" alt="" width={30} height={30} />
+            <Image src="/git.png" alt="" width={30} height={30} />
+          </div>
         </article>
 
         <figure class="relative w-96 h-96 border-[1px] mr-48">
@@ -76,7 +88,7 @@ export const Hero = () => {
           <span
             aria-label="Photo of Felipe Boni."
             role="img"
-            className="bg-[url('https://media.licdn.com/dms/image/D4D03AQGeghPpFKMDzA/profile-displayphoto-shrink_800_800/0/1669035396492?e=1679529600&v=beta&t=OBySlKf05R9TUTZzKAfuBAIqKRhEOU5oxjSNkmKSPV4')] w-full h-full inline-block bg-cover z-[2] -ml-7 -mt-7 relative"
+            className="bg-[url('/pfp.jpg')] w-full h-full inline-block bg-cover z-[2] -ml-7 -mt-7 relative"
           ></span>
         </figure>
       </div>
