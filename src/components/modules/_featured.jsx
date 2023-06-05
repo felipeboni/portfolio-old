@@ -41,10 +41,10 @@ export const Featured = () => {
               </a>
             </div>
             
-            <div className="bg-white relative aspect-video bg-cover bg-[url('/techwave.png')] group">
+            <div className="bg-white relative aspect-video bg-cover bg-[url('/baza.png')] group">
               <a
                 className="absolute flex items-center justify-center w-10 h-10 text-xl text-white transition-all opacity-0 hover:shadow-lg hover:shadow-primary-900/20 hover:top-3 top-4 right-4 group-hover:opacity-100 bg-primary-500"
-                href="https://techwave-chi.vercel.app/"
+                href="https://baza-murex.vercel.app/"
                 target="blank"
               >
                 <svg
@@ -64,6 +64,31 @@ export const Featured = () => {
                 </svg>
               </a>
             </div>
+            
+            <div className="bg-white relative aspect-video bg-cover bg-[url('/ecoleta.png')] group">
+              <a
+                className="absolute flex items-center justify-center w-10 h-10 text-xl text-white transition-all opacity-0 hover:shadow-lg hover:shadow-primary-900/20 hover:top-3 top-4 right-4 group-hover:opacity-100 bg-primary-500"
+                href="https://ecoleta-front-end.vercel.app/"
+                target="blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
           </Carousel>
         </article>
       </div>
