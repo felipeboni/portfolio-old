@@ -12,7 +12,7 @@ import { FullPage, Slide } from "react-full-page";
 import { BrowserView, MobileView } from "react-device-detect";
 
 export default function Home() {
-  const slidesToInvert = [2];
+  const slidesToInvert = [];
   const initialSlide = 0;
 
   const [activeSlider, setActiveSlider] = useState(initialSlide);

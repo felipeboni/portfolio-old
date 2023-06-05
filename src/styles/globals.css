@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './carousel.css';
+
 .container {
     @apply max-w-[1600px];
     @apply mx-auto;
@@ -12,7 +14,7 @@ section#hero {
 }
 
 section#featured {
-    background: linear-gradient(90deg, #721CE3 41.6%, #FFC83E 41.6%);
+    background: linear-gradient(90deg, #721CE3 50%, #FFC83E 50%);
 }
 
 header button.active {
@@ -50,4 +52,8 @@ header button.active::after {
 *::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 14px;
+}
+
+body {
+    overflow-x: hidden;
 }

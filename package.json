@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-full-page": "^0.1.12",
     "react-icons": "^4.7.1",
+    "react-simply-carousel": "^9.0.1",
     "save": "^2.9.0",
     "solid-icons": "^1.0.4"
   },
